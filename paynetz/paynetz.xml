@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="2.5" type="plugin" group="vmpayment">
+    <name>Paynetz</name>
+    <creationDate>June 24 2014</creationDate>
+    <author>ATOM Development Team</author>
+    <authorUrl>http://www.atom.net</authorUrl>
+    <copyright>Copyright (C) 2004-2014 Virtuemart Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>2.6.0</version>
+    <description>Paynetz payment plugin</description>
+
+    <files>
+        <filename plugin="paynetz">paynetz.php</filename>
+        <folder>language</folder>
+    </files>
+    <params addpath="/administrator/components/com_virtuemart/elements">
+             <param type="vmtitle" class="paynetz_title"  default="VMPAYMENT_PAYNETZ_PAYMENT_TITLE"
+               description="VMPAYMENT_PAYNETZ_REGISTER_DESC"/>
+        <param type="spacer" default="" level="level1"/>
+
+        <param type="customjs" default=""/>
+        <param class="level1" type="vmtitle" default="VMPAYMENT_PAYNETZ_BASIC_PARAMS"/>
+
+		<param class="api live required" name="api_merchant_url" type="text" size="80" default=""
+               label="VMPAYMENT_PAYNETZ_MERCHANT_URL"/>
+        <param class="api live required" name="api_server_port" type="text" size="80" default=""
+               label="VMPAYMENT_PAYNETZ_PORT"/>
+        <param class="api live required" name="api_login_id" type="text" size="80" default=""
+               label="VMPAYMENT_PAYNETZ_LOGIN_ID"/>
+        <param class="api live required" name="api_password" type="text" size="80" default=""
+               label="VMPAYMENT_PAYNETZ_PASSWORD"/>
+        <param class="api live required" name="api_product_id" type="text" size="80" default=""
+               label="VMPAYMENT_PAYNETZ_PRODUCT_ID"/>
+   
+    </params>
+
+
+</install>
